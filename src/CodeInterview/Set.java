@@ -28,8 +28,8 @@ public class Set {
     public  void testAdd(){
         add("wildan");
         add("akhmad");
-        add("iska");
-        add("iska");
+        add("nanu");
+        add("nanu");
 
         for(var item : array){
             if (item != null){
@@ -64,13 +64,13 @@ public class Set {
 
     public void testRemoved(){
         add("akhmad");
-        add("iska");
-        add("Rahmawati");
+        add("kuncoro");
+        add("Rokman");
         add("wildan");
         add("nanu");
 
-        remove("iska");
-        remove("Rahmawati");
+        remove("kuncoro");
+        remove("Rokman");
         remove("nanu");
 
         for (var i : array){
@@ -110,7 +110,7 @@ public class Set {
     }
 
     public void testCapacityArray(){
-        add("iska");
+        add("Luca");
         add("wildan");
         for (var i = 0; i < 20; i++){
             add("add ke " + i);
