@@ -25,4 +25,12 @@ public class Person {
     public void addHobbies(String hobby) {
         hobbies.add(hobby);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", hobbies=" + hobbies +
+                '}';
+    }
 }

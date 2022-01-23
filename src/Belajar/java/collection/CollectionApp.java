@@ -45,5 +45,15 @@ public class CollectionApp {
 
         System.out.println(nomor.contains(4));
         System.out.println(nomor.containsAll(Arrays.asList(4, 6, 8, 68)));//Harus benar semua agar return value true
+
+
+        ArrayList<String> names = new ArrayList<>();
+        names.addAll(List.of("akhmad", "wildan", "nana", "nanu"));
+        List<String> name = names.subList(1,3);
+        for (var nameSub : name){
+            System.out.println(nameSub);
+        }
     }
+
+
 }
