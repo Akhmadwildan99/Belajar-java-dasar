@@ -1,5 +1,6 @@
 package Belajar.java.collection;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.NavigableMap;
 import java.util.TreeMap;
@@ -28,5 +29,13 @@ public class NavigableMapApp {
             System.out.println(navigableMap.keySet());
             System.out.println(navigableMap.get(key));
         }
+
+        NavigableMap<String, String> mapDesc = navigableMap.descendingMap();
+        for (var key : mapDesc.keySet()){
+            System.out.println(key);
+        }
+
+        NavigableMap<String, String> empty = Collections.emptyNavigableMap();
+        NavigableMap<String, String> immutable = Collections.unmodifiableNavigableMap(navigableMap);
     }
 }
