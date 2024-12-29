@@ -6,7 +6,6 @@ class Tiger implements Animal{
         System.out.println("Aum.. Aum...");
     }
 
-
     public void animalSleep() {
         System.out.println("zz... zz... zz...");
     }

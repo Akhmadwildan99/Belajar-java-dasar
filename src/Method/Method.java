@@ -10,5 +10,17 @@ public class Method {
         sayHello();
         sayHello();
         sayHello();
+
+        MethodOverloading overloading = new MethodOverloading();
+        overloading.setGreeting("Hello");
+
+
+        System.out.println(overloading.getGreeting());
+        //Output: Hello
+
+        overloading.setName("Hello", "World");
+
+        System.out.println(overloading.getGreeting());
+        //Output: Hello World
     }
 }

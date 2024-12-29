@@ -23,6 +23,8 @@ public class DriverF1 {
         }
     }
 
+
+
     public static void main(String[] args) {
         DriverF1 vettel = new DriverF1();
         vettel.setDriverName("Sebastian Vettel");
@@ -30,7 +32,14 @@ public class DriverF1 {
         astonMartin.setTeamName("Aston Martin");
 
 
+        System.out.println(vettel.getDriverName() + " membalap untuk " + astonMartin.getTeamName());
+
+        DriverF1 max  = new DriverF1();
+        max = vettel;
+
+        max.setDriverName("Max Verstapen");
 
         System.out.println(vettel.getDriverName() + " membalap untuk " + astonMartin.getTeamName());
+        System.out.println(max.getDriverName() + " membalap untuk " + astonMartin.getTeamName());
     }
 }

@@ -9,9 +9,33 @@ public class MethodOverloading {
         System.out.println("Hi nama saya " + name + ", umur saya " + age + " tahun.");
     }
 
+    private String greeting;
+
+    public void setGreeting(String firstName){
+        this.greeting = firstName;
+    }
+
+    public void setName(String firstName, String lastName){
+        this.greeting = firstName + " "+ lastName;
+    }
+
+    public String getGreeting() {
+        return this.greeting;
+    }
+
     public static void main(String[] args) {
         sayHello("Wildan");
 
         sayHello("Lando", 22);
+
+        MethodOverloading overloading = new MethodOverloading();
+        overloading.setGreeting("Mulyono");
+
+
+        System.out.println(overloading.greeting);
+
+        overloading.setName("Mulyono", "Nitinegoro");
+
+        System.out.println(overloading.greeting);
     }
 }
