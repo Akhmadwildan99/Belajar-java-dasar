@@ -38,6 +38,16 @@ public class QuickSort {
     }
 
 
+    static boolean kabisat(int tahun) {
+        if((tahun % 4 == 0 && tahun % 100 != 0)|| tahun % 400 == 0) {
+            System.out.println("Kabisat");
+            return true;
+        }
+        System.out.println("Bukan Kabisat");
+        return false;
+    }
+
+
     public static void main(String[] args) {
         int[] arr = {10, 7, 8, 9, 1, 5, 22, 2, 3, 42, 11};
 
@@ -46,6 +56,14 @@ public class QuickSort {
 
         System.out.println(Arrays.toString(arr));
 
+//        kabisat(2018);
+//        kabisat(2020);
+//        kabisat(2016);
+//        kabisat(2014);
+//        kabisat(800);
+//
+//        kabisat(1600);
+//        kabisat(1800);
 
     }
 
